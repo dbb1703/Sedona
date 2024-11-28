@@ -1,0 +1,22 @@
+.form-textarea__text {
+  width: calc(100% - 44px);
+  box-sizing: border-box;
+  padding: 12px 25px 22px 20px;
+  margin: 0 22px 0;
+  border: none;
+  resize: none;
+  background-color: $bg-grey;
+
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+  font-family: $sans-bold;
+
+  &::placeholder {
+    color: $main-text;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 230px);
+  }
+}

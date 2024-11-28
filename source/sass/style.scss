@@ -1,0 +1,33 @@
+// Global
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/common.scss";
+
+// Common
+@import "blocks/common/page.scss";
+@import "blocks/common/btn.scss";
+@import "blocks/common/br.scss";
+@import "blocks/common/header.scss";
+@import "blocks/common/mainnav.scss";
+@import "blocks/common/soc.scss";
+
+// Index
+@import "blocks/index/cause.scss";
+@import "blocks/index/features.scss";
+@import "blocks/index/interest.scss";
+@import "blocks/index/map.scss";
+@import "blocks/index/footer.scss";
+
+// Form
+@import "blocks/form/form.scss";
+@import "blocks/form/form-text.scss";
+@import "blocks/form/form-radio.scss";
+@import "blocks/form/form-checkbox.scss";
+@import "blocks/form/form-textarea.scss";
+
+// Gallery
+@import "blocks/gallery/gallery.scss";
+@import "blocks/gallery/video.scss";
+
+// Visually-hidden
+@import "global/visually-hidden.scss";

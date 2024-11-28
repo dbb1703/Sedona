@@ -1,0 +1,16 @@
+.page {
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.page__body {
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+    max-width: 1200px;
+  }
+}

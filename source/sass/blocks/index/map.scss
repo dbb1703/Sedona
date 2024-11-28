@@ -1,0 +1,19 @@
+.map {
+  text-align: center;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 320px;
+  height: 350px;
+  margin-bottom: -8px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+  }
+}

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <title>Sedona</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body class="page__body">
+    <header class="header">
+      <nav class="header__nav main-nav main-nav--no-js">
+        <a href="index.html" class="main-nav__link main-nav__link--active"
+          >Главная</a
+        >
+        <a href="gallery.html" class="main-nav__link">Фото и видео</a>
+        <a href="form.html" class="main-nav__link">Форма отзыва</a>
+        <a href="https://dbdev.ru" class="main-nav__link">dbdev</a>
+        <a href="index.html" class="main-nav__logo">
+          <picture>
+            <source
+              type="image/svg+xml"
+              media="(min-width:1280px)"
+              srcset="img/logo-sedona-desktop.svg"
+            />
+            <source
+              type="image/svg+xml"
+              media="(min-width: 768px)"
+              srcset="img/logo-sedona-tablet.svg"
+            />
+            <img src="img/logo-sedona-mobile.svg" alt="Sedona: logo" />
+          </picture>
+        </a>
+        <button class="main-nav__close btn" type="button"></button>
+        <button class="main-nav__toggle btn" type="button"></button>
+      </nav>
+      <div class="header__intro header__intro--index">
+        <div class="header__welcome header__welcome--index"></div>
+        <svg
+          width="320"
+          height="27"
+          viewBox="0 0 320 27"
+          role="img"
+          aria-label="Triangle mobile"
+          focusable="false"
+          class="header__intro-triangle header__intro-triangle--mobile"
+        >
+          <use xlink:href="img/sprite.svg#triangle-mobile"></use>
+        </svg>
+        <svg
+          width="768"
+          height="57"
+          viewBox="0 0 768 57"
+          role="img"
+          aria-label="Triangle tablet"
+          focusable="false"
+          class="header__intro-triangle header__intro-triangle--tablet"
+        >
+          <use xlink:href="img/sprite.svg#triangle-tablet"></use>
+        </svg>
+        <svg
+          width="1200"
+          height="57"
+          viewBox="0 0 1200 57"
+          role="img"
+          aria-label="Triangle desktop"
+          focusable="false"
+          class="header__intro-triangle header__intro-triangle--desktop"
+        >
+          <use xlink:href="img/sprite.svg#triangle-desktop"></use>
+        </svg>
+      </div>
+      <!-- /.header__intro -->
+      <div class="header__content header__content--index">
+        <h1 class="header__title header__title--index">
+          СЕДОНА &#8211; небольшой<br class="br" />&nbsp;городок в АРИЗОНЕ,<br />&nbsp;заслуживающий
+          большего!
+        </h1>
+        <div class="header__text header__text--index">
+          Рассмотрим 5 причин, по которым<br class="br" />
+          Седона круче, чем гранд каньон!
+        </div>
+        <svg
+          width="320"
+          height="27"
+          viewBox="0 0 320 27"
+          role="img"
+          aria-label="Triangle mobile"
+          focusable="false"
+          class="header__content-triangle"
+        >
+          <use xlink:href="img/sprite.svg#triangle-mobile"></use>
+        </svg>
+      </div>
+    </header>
+    <!-- /.header -->
+
+    <section class="cause">
+      <div class="cause__wrapper">
+        <div class="cause__description cause__description--accent">
+          <h2 class="cause__title">
+            Настоящий<br class="br br--tablet" /><br
+              class="br br--desktop"
+            />&nbsp;городок
+          </h2>
+          <div class="cause__num">1</div>
+          <div class="cause__text">
+            Седона не аттракцион для туристов,<br
+              class="br br--desktop"
+            />&nbsp;там<br class="br" />&nbsp;течет своя<br
+              class="br br--tablet"
+            />&nbsp; жизнь
+          </div>
+        </div>
+        <div class="cause__picture">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1280px)"
+              srcset="
+                img/index/main-city-desktop@1x.webp 1x,
+                img/index/main-city-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+              srcset="
+                img/index/main-city-desktop@1x.jpg 1x,
+                img/index/main-city-desktop@2x.jpg 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                img/index/main-city-tablet@1x.webp 1x,
+                img/index/main-city-tablet@2x.webp 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 768px)"
+              srcset="
+                 img/index/main-city-tablet@1x.jpg 1x,
+                img/index/main-city-tablet@2x.jpg 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 320px)"
+              srcset="
+                img/index/main-city-mobile@1x.webp 1x,
+                img/index/main-city-mobile@2x.webp 2x
+              "
+            />
+            <img
+              src="img/index/main-city-mobile@1x.jpg"
+              srcset="img/index/main-city-mobile@2x.jpg 2x"
+              alt="Main city"
+            />
+          </picture>
+        </div>
+      </div>
+      <div class="cause__features features">
+        <div class="features__item">
+          <svg
+            width="74"
+            height="72"
+            viewBox="0 0 74 72"
+            role="img"
+            aria-label="Icon: house"
+            focusable="false"
+            class="features__icon features__icon--house"
+          >
+            <use xlink:href="img/sprite.svg#icon-house"></use>
+          </svg>
+          <h3 class="features__title">Жилье</h3>
+          <div class="features__text">
+            Рекомендуем пожить в настоящем мотеле, все как в кино!
+          </div>
+        </div>
+        <div class="features__item">
+          <svg
+            width="63"
+            height="75"
+            viewBox="0 0 63 75"
+            role="img"
+            aria-label="Icon: burger"
+            focusable="false"
+            class="features__icon features__icon--gift"
+          >
+            <use xlink:href="img/sprite.svg#icon-gift"></use>
+          </svg>
+          <h3 class="features__title">Сувениры</h3>
+          <div class="features__text">
+            Не только китайского,<br class="br br--desktop" />&nbsp;но и
+            местного производства!
+          </div>
+        </div>
+        <div class="features__item">
+          <svg
+            width="76"
+            height="68"
+            viewBox="0 0 76 68"
+            role="img"
+            aria-label="Icon: gift"
+            focusable="false"
+            class="features__icon features__icon--burger"
+          >
+            <use xlink:href="img/sprite.svg#icon-burger"></use>
+          </svg>
+          <h3 class="features__title">Еда</h3>
+          <div class="features__text">
+            Всегда заказывайте фирменный бургер,<br
+              class="br br--tablet"
+            />&nbsp; вы не разочаруетесь!
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.cause -->
+
+    <section class="cause">
+      <div class="cause__wrapper cause__wrapper--even">
+        <div class="cause__description cause__description--accent">
+          <h2 class="cause__title cause__title--2">
+            Там есть<br class="br br--tablet" /><br
+              class="br br--desktop"
+            />&nbsp;мост дьявола
+          </h2>
+          <div class="cause__num">2</div>
+          <div class="cause__text">
+            Да, по нему можно<br class="br br--tablet" />&nbsp;пройти!<br
+              class="br br--desktop"
+            />&nbsp;Если вы<br class="br" /><br
+              class="br br--tablet"
+            />&nbsp;осмелитесь, конечно.
+          </div>
+        </div>
+        <div class="cause__picture">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1280px)"
+              srcset="
+                img/index/main-bridge-desktop@1x.webp 1x,
+                img/index/main-bridge-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 1280px)"
+              srcset="
+                img/index/main-bridge-desktop@1x.jpg 1x,
+                img/index/main-bridge-desktop@2x.jpg 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                img/index/main-bridge-tablet@1x.webp 1x,
+                img/index/main-bridge-tablet@2x.webp 2x
+              "
+            />
+            <source
+              type="image/jpeg"
+              media="(min-width: 768px)"
+              srcset="
+                img/index/main-bridge-tablet@1x.jpg 1x,
+                img/index/main-bridge-tablet@2x.jpg 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 320px)"
+              srcset="
+                img/index/main-bridge-mobile@1x.webp 1x,
+                img/index/main-bridge-mobile@2x.webp 2x
+              "
+            />
+            <img
+              src="img/index/main-bridge-mobile@1x.jpg"
+              srcset="img/index/main-bridge-mobile@2x.jpg 2x"
+              alt="Main city"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <!-- /.cause -->
+
+    <section class="cause cause--short">
+      <div class="cause__wrapper cause__wrapper--grey">
+        <div class="cause__description cause__description--border">
+          <h2 class="cause__title">
+            Небольшая<br class="br br--tablet" /><br
+              class="br br--desktop"
+            />&nbsp;площадь
+          </h2>
+          <div class="cause__num">3</div>
+          <div class="cause__text">
+            Все интересные места находятся очень<br
+              class="br br--desktop"
+            />близко
+          </div>
+        </div>
+      </div>
+      <div class="cause__wrapper cause__wrapper--grey">
+        <div class="cause__description cause__description--border">
+          <h2 class="cause__title">
+            Красивая<br class="br br--tablet" /><br
+              class="br br--desktop"
+            />&nbsp;дорога
+          </h2>
+          <div class="cause__num">4</div>
+          <div class="cause__text">
+            Ехать в Седону из<br class="br br--tablet" />&nbsp;Лас-вегаса
+            совсем<br class="br br--desktop" />не скучно!
+          </div>
+        </div>
+      </div>
+      <div class="cause__wrapper cause__wrapper--grey">
+        <div class="cause__description cause__description--border">
+          <h2 class="cause__title">
+            Мало<br class="br br--tablet" /><br
+              class="br br--desktop"
+            />&nbsp;туристов
+          </h2>
+          <div class="cause__num">5</div>
+          <div class="cause__text">
+            Большинство едет в<br class="br br--tablet" />&nbsp;Гранд-Каньон
+            и<br class="br br--tablet" /><br
+              class="br br--desktop"
+            />&nbsp;толпится там
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.cause -->
+
+    <section class="interest">
+      <div class="interest__wrapper">
+        <h2 class="interest__title">Заинтересовались?</h2>
+        <div class="interest__text">
+          Укажите предполагаемые даты поездки,<br class="br br--tablet" /><br
+            class="br br--desktop"
+          />&nbsp;и мы покажем вам лучшие предложения гостиниц в Седоне.
+        </div>
+        <button class="btn interest__btn">Найти гостиницу</button>
+      </div>
+    </section>
+    <!-- /.interest -->
+
+    <section class="map">
+      <h2 class="visually-hidden">Карта</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12894.967533589654!2d-112.12123935855497!3d36.0997796192666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80cc0654bd27e08d%3A0xb1c2554442d42e8d!2z0JPRgNCw0L3QtCDQmtCw0L3RjNC-0L0!5e0!3m2!1sru!2sru!4v1637642774758!5m2!1sru!2sru"
+        width="600"
+        height="450"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__hash">#VESITSEDONA</div>
+        <div class="footer__soc soc">
+          <a href="#" class="soc__link" onclick="event.preventDefault();">
+            <span class="soc__icon soc__icon--twitter">
+              <svg
+                width="17"
+                height="15"
+                viewBox="0 0 17 15"
+                role="img"
+                aria-label="Icon: Twitter"
+                focusable="false"
+                class=""
+              >
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </span>
+          </a>
+          <a href="#" class="soc__link" onclick="event.preventDefault();">
+            <span class="soc__icon soc__icon--facebook">
+              <svg
+                width="8"
+                height="18"
+                viewBox="0 0 8 18"
+                role="img"
+                aria-label="Icon: Facebook"
+                focusable="false"
+                class=""
+              >
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </span>
+          </a>
+          <a href="#" class="soc__link" onclick="event.preventDefault();">
+            <span class="soc__icon soc__icon--youtube">
+              <svg
+                width="20"
+                height="14"
+                viewBox="0 0 20 14"
+                role="img"
+                aria-label="Icon: youtube"
+                focusable="false"
+                class=""
+              >
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
+        <div class="footer__dev">
+          <a href="#" class="footer__academy" onclick="event.preventDefault();">
+            Разработано
+            <svg
+              width="27"
+              height="34"
+              viewBox="0 0 27 34"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-labelledby="academy-link"
+              focusable="false"
+              class="footer__icon-academy"
+            >
+              <title id="academy-link">Logo: HTMLAcademy</title>
+              <path
+                d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

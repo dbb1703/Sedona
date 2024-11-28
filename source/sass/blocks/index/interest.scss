@@ -1,0 +1,38 @@
+.interest__wrapper {
+  text-align: center;
+  max-width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 450px;
+    padding-top: 24px;
+  }
+}
+
+.interest__title {
+  margin: 32px 0 19px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    padding-bottom: 13px;
+  }
+}
+
+.interest__text {
+  text-transform: uppercase;
+}
+
+.interest__btn {
+  margin-top: 27px;
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    max-width: 458px;
+    margin: 37px 0 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 64px;
+  }
+}

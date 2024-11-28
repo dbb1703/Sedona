@@ -1,0 +1,78 @@
+.footer__wrapper {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 648px;
+    padding: 0 60px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: unset;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+}
+
+.footer__hash {
+  margin: 40px 0 38px;
+
+  font-family: $sans-bold;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.footer__soc {
+  height: 48px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
+
+.footer__dev {
+  margin: 0 auto;
+  max-width: 145px;
+
+  @media (min-width: $tablet-width) {
+    max-width: unset;
+    margin: unset;
+  }
+}
+
+.footer__academy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  margin-bottom: 23px;
+  text-transform: uppercase;
+  color: #000000;
+
+  &:hover {
+    color: $bg-blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:hover svg {
+    fill: $bg-blue;
+  }
+
+  &:active svg {
+    fill: #000000;
+    opacity: 0.3;
+  }
+}
+
+.footer__icon-academy {
+  margin-left: 12px;
+}

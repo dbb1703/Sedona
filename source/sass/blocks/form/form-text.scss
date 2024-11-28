@@ -1,0 +1,100 @@
+.form__text-wrap {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.form-text__label {
+  text-transform: uppercase;
+  color: #333333;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+    margin-left: 0;
+  }
+}
+
+.form-text__label--phone {
+  @media (min-width: $desktop-width) {
+    width: 78px;
+  }
+}
+
+.form-text__label--email {
+  @media (min-width: $desktop-width) {
+    width: 160px;
+  }
+}
+
+.form-text__label--name {
+  max-width: 38px;
+  padding-right: 12px;
+}
+
+.form-text__label--lastname {
+  padding-right: 14px;
+  max-width: 74px;
+}
+
+.form-text__label--patronymic {
+  padding-right: 16px;
+  max-width: 70px;
+}
+
+.form-text__input {
+  border: none;
+  background-color: #f2f2f2;
+  width: 100%;
+
+  font-family: $sans-bold;
+  font-size: 18px;
+  line-height: 58px;
+  padding: 0 22px;
+
+  &::placeholder {
+    color: #000000;
+  }
+}
+
+.form-text__input--icon {
+  width: calc(100% - 102px);
+}
+
+.form-text__input--phone {
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 180px);
+  }
+}
+
+.form-text__input--email {
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 262px);
+  }
+}
+
+.form-text--icon {
+  margin-top: 0;
+  flex-wrap: wrap;
+
+  &:last-child {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 450px;
+
+    &:last-child {
+      margin-left: -50px;
+    }
+  }
+}
+
+.form-text__label--m {
+  margin-left: 23px;
+  margin-bottom: 1px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+  }
+}

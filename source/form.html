@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <title>Sedona - форма для отзыва</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body class="page__body">
+    <header class="header">
+      <nav class="header__nav main-nav main-nav--no-js">
+        <a href="index.html" class="main-nav__link">Главная</a>
+        <a href="gallery.html" class="main-nav__link">Фото и видео</a>
+        <a href="form.html" class="main-nav__link main-nav__link--active"
+          >Форма отзыва</a
+        >
+        <a href="https://dbdev.ru" class="main-nav__link">dbdev</a>
+        <a href="index.html" class="main-nav__logo">
+          <picture>
+            <source
+              type="image/svg+xml"
+              media="(min-width:1280px)"
+              srcset="img/logo-sedona-desktop.svg"
+            />
+            <source
+              type="image/svg+xml"
+              media="(min-width: 768px)"
+              srcset="img/logo-sedona-tablet.svg"
+            />
+            <img src="img/logo-sedona-mobile.svg" alt="Sedona: logo" />
+          </picture>
+        </a>
+        <button class="main-nav__close btn" type="button"></button>
+        <button class="main-nav__toggle btn" type="button"></button>
+      </nav>
+      <div class="header__intro">
+        <div class="header__welcome"></div>
+        <svg
+          width="320"
+          height="27"
+          viewBox="0 0 320 27"
+          role="img"
+          aria-label="Triangle mobile"
+          focusable="false"
+          class="header__intro-triangle header__intro-triangle--mobile"
+        >
+          <use xlink:href="img/sprite.svg#triangle-mobile"></use>
+        </svg>
+        <svg
+          width="768"
+          height="57"
+          viewBox="0 0 768 57"
+          role="img"
+          aria-label="Triangle tablet"
+          focusable="false"
+          class="header__intro-triangle header__intro-triangle--tablet"
+        >
+          <use xlink:href="img/sprite.svg#triangle-tablet"></use>
+        </svg>
+        <svg
+          width="1200"
+          height="57"
+          viewBox="0 0 1200 57"
+          role="img"
+          aria-label="Triangle desktop"
+          focusable="false"
+          class="header__intro-triangle header__intro-triangle--desktop"
+        >
+          <use xlink:href="img/sprite.svg#triangle-desktop"></use>
+        </svg>
+      </div>
+      <!-- /.header__intro -->
+      <div class="header__content">
+        <h1 class="header__title">Оставьте свой отзыв</h1>
+        <div class="header__text">
+          Помогите нашим отелям стать лучше! Оставьте отзыв о них,<br
+            class="br br--tablet"
+          /><br class="br br--desktop" />&nbsp; а также о посещенных вами
+          достопримечательностях
+        </div>
+      </div>
+    </header>
+    <!-- /.header -->
+
+    <section class="feedback">
+      <h2 class="visually-hidden">Форма для отзыва</h2>
+
+      <form action="#" class="form form--wrap">
+        <div class="form__wrap">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Представьтесь:</legend>
+
+            <div class="form__field form-text">
+              <label for="name" class="form-text__label form-text__label--name"
+                >Имя*:</label
+              >
+              <input
+                class="form-text__input"
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Петр"
+              />
+            </div>
+
+            <div class="form__field form-text">
+              <label
+                for="lastname"
+                class="form-text__label form-text__label--lastname"
+                >Фамилия*:</label
+              >
+              <input
+                class="form-text__input"
+                id="lastname"
+                type="text"
+                name="lastname"
+                placeholder="Иванов"
+              />
+            </div>
+
+            <div class="form__field form-text">
+              <label
+                for="patronymic"
+                class="form-text__label form-text__label--patronymic"
+                >Отчество:</label
+              >
+              <input
+                class="form-text__input"
+                id="patronymic"
+                type="text"
+                name="patronymic"
+                placeholder="Александрович"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend form__legend--lines">
+              Контактная информация:
+            </legend>
+
+            <div class="form__text-wrap">
+              <div class="form__field form-text form-text--icon">
+                <label
+                  for="phone"
+                  class="
+                    form-text__label form-text__label--m form-text__label--phone
+                  "
+                  ><span class="form-text__d-dn">Контактный </span
+                  >телефон*:</label
+                >
+
+                <input
+                  class="
+                    form-text__input
+                    form-text__input--icon
+                    form-text__input--phone
+                  "
+                  id="phone"
+                  type="text"
+                  name="phone"
+                  placeholder="Введите телефон"
+                />
+                <span class="form__icon form__icon--phone"></span>
+              </div>
+
+              <div class="form__field form-text form-text--icon">
+                <label
+                  for="email"
+                  class="
+                    form-text__label form-text__label--m form-text__label--email
+                  "
+                  >Электронная почта*:</label
+                >
+                <input
+                  class="
+                    form-text__input
+                    form-text__input--icon
+                    form-text__input--email
+                  "
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Введите e-mail"
+                />
+                <span class="form__icon form__icon--email"></span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Ваше общее впечатление:</legend>
+
+            <div class="form__field form-radio">
+              <input
+                class="form-radio__value"
+                id="impression-1"
+                type="radio"
+                name="impression"
+                checked="checked"
+              />
+              <label for="impression-1" class="form-radio__label"
+                >Скорее положительное</label
+              >
+            </div>
+
+            <div class="form__field form-radio">
+              <input
+                class="form-radio__value"
+                id="impression-2"
+                type="radio"
+                name="impression"
+              />
+              <label for="impression-2" class="form-radio__label"
+                >Скорее отрицательное</label
+              >
+            </div>
+
+            <div class="form__field form-radio">
+              <input
+                class="form-radio__value"
+                id="impression-3"
+                type="radio"
+                name="impression"
+              />
+              <label for="impression-3" class="form-radio__label"
+                >Затрудняюсь ответить</label
+              >
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend form__legend--lines">
+              Посещенные <br />достопримечательности:
+            </legend>
+
+            <div class="form__sight-wrap">
+              <div class="form__field form-checkbox">
+                <input
+                  class="form-checkbox__value"
+                  id="sight-1"
+                  type="checkbox"
+                  name="sight-1"
+                  checked="checked"
+                />
+                <label for="sight-1" class="form-checkbox__label"
+                  >Мост Дьявола</label
+                >
+              </div>
+
+              <div class="form__field form-checkbox">
+                <input
+                  class="form-checkbox__value"
+                  id="sight-2"
+                  type="checkbox"
+                  name="sight-2"
+                  checked="checked"
+                />
+                <label for="sight-2" class="form-checkbox__label"
+                  >Гора-Колокол</label
+                >
+              </div>
+
+              <div class="form__field form-checkbox">
+                <input
+                  class="form-checkbox__value"
+                  id="sight-3"
+                  type="checkbox"
+                  name="sight-3"
+                  checked="checked"
+                />
+                <label for="sight-3" class="form-checkbox__label"
+                  >Слайд-парк</label
+                >
+              </div>
+
+              <div class="form__field form-checkbox">
+                <input
+                  class="form-checkbox__value"
+                  id="sight-4"
+                  type="checkbox"
+                  name="sight-4"
+                />
+                <label for="sight-4" class="form-checkbox__label"
+                  >Красные скалы</label
+                >
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form-textarea">
+            <legend class="form__legend form__legend--lines">
+              Опишите свои эмоции
+            </legend>
+
+            <textarea
+              name="emotions"
+              class="form-textarea__text"
+              id="emotions"
+              cols="20"
+              rows="4"
+              placeholder="Опишите подробно все свои восторги"
+            ></textarea>
+
+            <div class="form__submit-wrap">
+              <button
+                class="btn btn--submit form__submit"
+                onclick="event.preventDefault();"
+              >
+                Отправить отзыв
+              </button>
+
+              <p class="form__p-required">* — обязательные поля</p>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__hash">#VESITSEDONA</div>
+        <div class="footer__soc soc">
+          <a href="#" class="soc__link" onclick="event.preventDefault();">
+            <span class="soc__icon soc__icon--twitter">
+              <svg
+                width="17"
+                height="15"
+                viewBox="0 0 17 15"
+                role="img"
+                aria-label="Icon: Twitter"
+                focusable="false"
+                class=""
+              >
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </span>
+          </a>
+          <a href="#" class="soc__link" onclick="event.preventDefault();">
+            <span class="soc__icon soc__icon--facebook">
+              <svg
+                width="8"
+                height="18"
+                viewBox="0 0 8 18"
+                role="img"
+                aria-label="Icon: Facebook"
+                focusable="false"
+                class=""
+              >
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </span>
+          </a>
+          <a href="#" class="soc__link" onclick="event.preventDefault();">
+            <span class="soc__icon soc__icon--youtube">
+              <svg
+                width="20"
+                height="14"
+                viewBox="0 0 20 14"
+                role="img"
+                aria-label="Icon: youtube"
+                focusable="false"
+                class=""
+              >
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
+        <div class="footer__dev">
+          <a href="#" class="footer__academy" onclick="event.preventDefault();">
+            Разработано
+            <svg
+              width="27"
+              height="34"
+              viewBox="0 0 27 34"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-labelledby="academy-link"
+              focusable="false"
+              class="footer__icon-academy"
+            >
+              <title id="academy-link">Logo: HTMLAcademy</title>
+              <path
+                d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.min.js"></script>
+  </body>
+</html>

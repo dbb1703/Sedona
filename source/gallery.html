@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <title>Sedona - фото и видео</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+  <body class="page__body">
+    <header class="header">
+      <nav class="header__nav main-nav main-nav--no-js">
+        <a href="index.html" class="main-nav__link">Главная</a>
+        <a href="gallery.html" class="main-nav__link main-nav__link--active"
+          >Фото и видео</a
+        >
+        <a href="form.html" class="main-nav__link">Форма отзыва</a>
+        <a href="https://dbdev.ru" class="main-nav__link">dbdev</a>
+        <a href="index.html" class="main-nav__logo">
+          <picture>
+            <source
+              type="image/svg+xml"
+              media="(min-width:1280px)"
+              srcset="img/logo-sedona-desktop.svg"
+            />
+            <source
+              type="image/svg+xml"
+              media="(min-width: 768px)"
+              srcset="img/logo-sedona-tablet.svg"
+            />
+            <img src="img/logo-sedona-mobile.svg" alt="Sedona: logo" />
+          </picture>
+        </a>
+        <button class="main-nav__close btn" type="button"></button>
+        <button class="main-nav__toggle btn" type="button"></button>
+      </nav>
+      <div class="header__intro">
+        <div class="header__welcome"></div>
+        <svg
+          width="320"
+          height="27"
+          viewBox="0 0 320 27"
+          role="img"
+          aria-label="Triangle mobile"
+          focusable="false"
+          class="header__intro-triangle header__intro-triangle--mobile"
+        >
+          <use xlink:href="img/sprite.svg#triangle-mobile"></use>
+        </svg>
+        <svg
+          width="768"
+          height="57"
+          viewBox="0 0 768 57"
+          role="img"
+          aria-label="Triangle tablet"
+          focusable="false"
+          class="header__intro-triangle header__intro-triangle--tablet"
+        >
+          <use xlink:href="img/sprite.svg#triangle-tablet"></use>
+        </svg>
+        <svg
+          width="1200"
+          height="57"
+          viewBox="0 0 1200 57"
+          role="img"
+          aria-label="Triangle desktop"
+          focusable="false"
+          class="header__intro-triangle header__intro-triangle--desktop"
+        >
+          <use xlink:href="img/sprite.svg#triangle-desktop"></use>
+        </svg>
+      </div>
+      <!-- /.header__intro -->
+      <div class="header__content">
+        <h1 class="header__title">Фото и видео</h1>
+        <div class="header__text">
+          Не можете решиться на путешествие&nbsp;<br class="br br--mobile" />
+          из-за курса?<br class="br br--tablet" /><br class="br br--desktop" />
+          Фотографии помогут вам<br class="br br--mobile" />&nbsp;забыть о
+          политике и экономике.
+        </div>
+      </div>
+    </header>
+    <!-- /.header -->
+
+    <section class="photos">
+      <h2 class="visually-hidden">Фотографии "Sedona"</h2>
+
+      <div class="gallery">
+        <div class="gallery__wrap">
+          <div class="gallery__item gallery__item--accent">
+            <picture class="gallery__photo gallery__photo--accent">
+              <source
+                type="image/webp"
+                media="(min-width: 1280px)"
+                srcset="
+                  img/photos/photo-sunset-desktop@1x.webp 1x,
+                  img/photos/photo-sunset-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/jpeg"
+                media="(min-width: 1280px)"
+                srcset="
+                  img/photos/photo-sunset-desktop@1x.jpg 1x,
+                  img/photos/photo-sunset-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/photos/photo-sunset-tablet@1x.webp 1x,
+                  img/photos/photo-sunset-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/jpeg"
+                media="(min-width: 768px)"
+                srcset="
+                  img/photos/photo-sunset-tablet@1x.jpg 1x,
+                  img/photos/photo-sunset-tablet@2x.jpg 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 320px)"
+                srcset="
+                  img/photos/photo-sunset-mobile@1x.webp 1x,
+                  img/photos/photo-sunset-mobile@2x.webp 2x
+                "
+              />
+              <img
+                src="img/photos/photo-sunset-mobile@1x.jpg"
+                srcset="img/photos/photo-sunset-mobile@2x.jpg 2x"
+                alt="Sedona: photo sunset"
+              />
+            </picture>
+            <div class="gallery__content gallery__content--accent">
+              <h3 class="gallery__title">Неродные просторы</h3>
+              <p class="gallery__author">Автор фото: Борис</p>
+              <a
+                class="gallery__link"
+                href="#"
+                onclick="event.preventDefault();console.log(1);"
+              >
+                <span class="gallery__like">
+                  <svg
+                    width="22"
+                    height="20"
+                    viewBox="0 0 22 20"
+                    role="img"
+                    aria-label="Icon: Like"
+                    focusable="false"
+                    class=""
+                  >
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </span>
+                1350
+              </a>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <picture class="gallery__photo">
+              <source
+                type="image/webp"
+                media="(min-width: 1200px)"
+                srcset="
+                  img/photos/photo-cactus-desktop@1x.webp 1x,
+                  img/photos/photo-cactus-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/jpeg"
+                media="(min-width: 1200px)"
+                srcset="
+                  img/photos/photo-cactus-desktop@1x.jpg 1x,
+                  img/photos/photo-cactus-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/photos/photo-cactus-tablet@1x.webp 1x,
+                  img/photos/photo-cactus-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/jpeg"
+                media="(min-width: 768px)"
+                srcset="
+                  img/photos/photo-cactus-tablet@1x.jpg 1x,
+                  img/photos/photo-cactus-tablet@2x.jpg 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 320px)"
+                srcset="
+                  img/photos/photo-cactus-mobile@1x.webp 1x,
+                  img/photos/photo-cactus-mobile@2x.webp 2x
+                "
+              />
+              <img
+                src="img/photos/photo-cactus-mobile@1x.jpg"
+                srcset="img/photos/photo-cactus-mobile@2x.jpg 2x"
+                alt="Sedona: photo cactus"
+              />
+            </picture>
+            <div class="gallery__content">
+              <h3 class="gallery__title">Местная растительность</h3>
+              <p class="gallery__author">Автор фото: Сергей</p>
+              <a
+                class="gallery__link"
+                href="#"
+                onclick="event.preventDefault();console.log(1);"
+              >
+                <span class="gallery__like">
+                  <svg
+                    width="22"
+                    height="20"
+                    viewBox="0 0 22 20"
+                    role="img"
+                    aria-label="Icon: Like"
+                    focusable="false"
+                    class=""
+                  >
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </span>
+                143
+              </a>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <picture class="gallery__photo">
+              <source
+                type="image/webp"
+                media="(min-width: 1200px)"
+                srcset="
+                  img/photos/photo-roads-desktop@1x.webp 1x,
+                  img/photos/photo-roads-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/jpeg"
+                media="(min-width: 1200px)"
+                srcset="
+                  img/photos/photo-roads-desktop@1x.jpg 1x,
+                  img/photos/photo-roads-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/photos/photo-roads-tablet@1x.webp 1x,
+                  img/photos/photo-roads-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/jpeg"
+                media="(min-width: 768px)"
+                srcset="
+                  img/photos/photo-roads-tablet@1x.jpg 1x,
+                  img/photos/photo-roads-tablet@2x.jpg 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 320px)"
+                srcset="
+                  img/photos/photo-roads-mobile@1x.webp 1x,
+                  img/photos/photo-roads-mobile@2x.webp 2x
+                "
+              />
+              <img
+                src="img/photos/photo-roads-mobile@1x.jpg"
+                srcset="img/photos/photo-roads-mobile@2x.jpg 2x"
+                alt="Sedona: photo roads"
+              />
+            </picture>
+            <div class="gallery__content">
+              <h3 class="gallery__title">Дорога на север</h3>
+              <p class="gallery__author">Автор фото: Петр</p>
+              <a
+                class="gallery__link"
+                href="#"
+                onclick="event.preventDefault();console.log(1);"
+              >
+                <span class="gallery__like">
+                  <svg
+                    width="22"
+                    height="20"
+                    viewBox="0 0 22 20"
+                    role="img"
+                    aria-label="Icon: Like"
+                    focusable="false"
+                    class=""
+                  >
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </span>
+                96
+              </a>
+            </div>
+          </div>
+
+          <div class="gallery__item">
+            <picture class="gallery__photo">
+              <source
+                type="image/webp"
+                media="(min-width: 1200px)"
+                srcset="
+                  img/photos/photo-bridge-desktop@1x.webp 1x,
+                  img/photos/photo-bridge-desktop@2x.webp 2x
+                "
+              />
+              <source
+                type="image/jpeg"
+                media="(min-width: 1200px)"
+                srcset="
+                  img/photos/photo-bridge-desktop@1x.jpg 1x,
+                  img/photos/photo-bridge-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="
+                  img/photos/photo-bridge-tablet@1x.webp 1x,
+                  img/photos/photo-bridge-tablet@2x.webp 2x
+                "
+              />
+              <source
+                type="image/jpeg"
+                media="(min-width: 768px)"
+                srcset="
+                  img/photos/photo-bridge-tablet@1x.jpg 1x,
+                  img/photos/photo-bridge-tablet@2x.jpg 2x
+                "
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 320px)"
+                srcset="
+                  img/photos/photo-bridge-mobile@1x.webp 1x,
+                  img/photos/photo-bridge-mobile@2x.webp 2x
+                "
+              />
+              <img
+                src="img/photos/photo-bridge-mobile@1x.jpg"
+                srcset="img/photos/photo-bridge-mobile@2x.jpg 2x"
+                alt="Sedona: photo bridge"
+              />
+            </picture>
+            <div class="gallery__content">
+              <h3 class="gallery__title">Мост дьявола</h3>
+              <p class="gallery__author">Автор фото: Антон</p>
+              <a
+                class="gallery__link"
+                href="#"
+                onclick="event.preventDefault();console.log(1);"
+              >
+                <span class="gallery__like">
+                  <svg
+                    width="22"
+                    height="20"
+                    viewBox="0 0 22 20"
+                    role="img"
+                    aria-label="Icon: Like"
+                    focusable="false"
+                    class=""
+                  >
+                    <use xlink:href="img/sprite.svg#icon-like"></use>
+                  </svg>
+                </span>
+                254
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.photos -->
+
+    <section class="video">
+      <div class="video__wrap">
+        <h2 class="video__title">Все еще сомневаетесь?</h2>
+        <div class="video__text">
+          Смотрите видеопрезентацию и<br class="br br--mobile" />
+          скорее за билетами, пока они<br class="br br--tablet" /><br
+            class="br br--desktop"
+          />&nbsp;не
+          <br class="br br--mobile" />
+          подорожали в очередной раз!
+        </div>
+        <video class="video__source" controls="controls">
+          <source src="video/video.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </section>
+    <!-- /.video -->
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__hash">#VESITSEDONA</div>
+        <div class="footer__soc soc">
+          <a href="#" class="soc__link" onclick="event.preventDefault();">
+            <span class="soc__icon soc__icon--twitter">
+              <svg
+                width="17"
+                height="15"
+                viewBox="0 0 17 15"
+                role="img"
+                aria-label="Icon: Twitter"
+                focusable="false"
+                class=""
+              >
+                <use xlink:href="img/sprite.svg#icon-twitter"></use>
+              </svg>
+            </span>
+          </a>
+          <a href="#" class="soc__link" onclick="event.preventDefault();">
+            <span class="soc__icon soc__icon--facebook">
+              <svg
+                width="8"
+                height="18"
+                viewBox="0 0 8 18"
+                role="img"
+                aria-label="Icon: Facebook"
+                focusable="false"
+                class=""
+              >
+                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+              </svg>
+            </span>
+          </a>
+          <a href="#" class="soc__link" onclick="event.preventDefault();">
+            <span class="soc__icon soc__icon--youtube">
+              <svg
+                width="20"
+                height="14"
+                viewBox="0 0 20 14"
+                role="img"
+                aria-label="Icon: youtube"
+                focusable="false"
+                class=""
+              >
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
+        <div class="footer__dev">
+          <a href="#" class="footer__academy" onclick="event.preventDefault();">
+            Разработано
+            <svg
+              width="27"
+              height="34"
+              viewBox="0 0 27 34"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-labelledby="academy-link"
+              focusable="false"
+              class="footer__icon-academy"
+            >
+              <title id="academy-link">Logo: HTMLAcademy</title>
+              <path
+                d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
